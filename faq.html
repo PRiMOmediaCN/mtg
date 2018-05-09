@@ -1,0 +1,92 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="万智牌中文数据百科网站。提供查牌、查套牌、百科和各种中文万智牌工具。">
+<meta name="keywords" content="万智牌 牌库 中文 百科 查牌"> 
+<title>问答FAQ - 爱基兔万智牌 - IG2</title>
+<link href="images/css.css" rel="stylesheet" type="text/css" />
+<script src="inc/jquery.js"></script>
+<script type="text/javascript">
+function createXMLHTTP() {
+	var request;
+	var browser = navigator.appName;
+	if(browser == "Microsoft Internet Explorer") {
+		var arrVersions = ["Microsoft.XMLHttp", "MSXML2.XMLHttp.4.0", "MSXML2.XMLHttp.3.0", "MSXML2.XMLHttp","MSXML2.XMLHttp.5.0"];
+		for (var i=0; i < arrVersions.length; i++)  {
+			try {
+				request = new ActiveXObject(arrVersions[i]); 
+				return request;
+			}catch(exception){}
+		}
+	}else{
+		request = new XMLHttpRequest(); 
+		return request;
+	}
+}
+</script>
+</head>
+<body>
+<div class="tit" id="top">
+    <div class="main">
+        <a href="index.php"><img src="images/logo.png" class="fl" /></a>
+        <ul class="maintop">
+        <a href="index.html">首页</a>
+        <a href="sitemap.html">牌库</a>
+        <a href="decks.php">构筑</a>
+        <a href="formats.php">比赛</a>
+        <a href="dictionary.php">百科</a>
+        <a href="public.html">公益</a>
+        <span>
+        <form action="sch.php" method="get">
+        <input name="n" type="text" value="" class="ipt" placeholder="输入牌名" /><input name="" type="submit" value="搜索" class="bt" />
+        <input name="" type="button" value="高级搜索" class="bt" onclick="location.href='schfull.php'" />
+        </form>
+        </span>
+        <div class="fr" id="userbar"></div>
+        </ul>
+    </div>
+</div>
+<script>
+$(function(){
+    $.post('ra_ajax.php',{
+		action:'getLoginStatus'
+	},function(res){
+		$("#userbar").html(res);
+	});
+});
+</script>
+<div class="bodyfixed">
+    <div class="goTop" onclick="$('body').animate({scrollTop:0}, 400);">回顶</div>
+    <div class="goTop" onclick="location.href='suberror.php'">反馈</div>
+</div>
+<div class="main"><div class="addleft">
+    <a href="aboutus.html">关于我们</a>
+    <a href="faq.html">FAQ</a>
+    <a href="volunteer.html">志愿者计划</a>
+    <a href="contact.html">联系我</a>
+</div><div class="addbar">
+    <ul>
+    <h2>FAQ</h2>
+    <li><strong>Q：有些老牌本身就没有中文翻译，网站上的翻译是哪儿来的？</strong></li>
+    <li>A：是我个人翻的，可能会有些错误的地方，希望大家发现后指正。</li>
+    <li><strong>Q：你不是说非商业行为么，为什么开淘宝店？</strong></li>
+    <li>A：我们为了自己测试套牌方便印刷套牌，开个店为了给大家一个快速便宜的方式打印自己的测试套牌。</li>
+    <li><strong>Q：是否在淘宝店消费跟使用网站有关系么？</strong></li>
+    <li>A：是否在淘宝购物与使用本网站并无任何关系。</li>
+    <li><strong>Q：淘宝店地址？</strong></li>
+    <li>A：请访问：<a href="https://ig2cc.taobao.com">https://ig2cc.taobao.com</a>。</li>
+    <li><strong>Q：如何注册会员？</strong></li>
+    <li>A：请参阅<a href="volunteer.html">志愿者计划</a>。</li>
+    <li><strong>Q：上哪儿去找成型的套牌？</strong></li>
+    <li>A：在<a href="decks.php">构筑</a>版块。可以搜索中文套牌名称功能查询套牌。</li>
+    </ul>
+</div>
+
+<div class="downbar">
+    <span class="fl">
+        <a href="aboutus.html">关于我们</a> -
+        <a href="add_cards.php">志愿者</a>
+    </span>
+    <span class="fr">INTEREST GATHERING 2 (IG2)· 爱基兔万智牌数据网站 copyright  <a href="#">京ICP备12043279号-3</a> Powerd by <a href="http://rams.cc" target="_blank">RAMs</a></span>
+</div>
+</div></body></html>

@@ -1,0 +1,350 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="万智牌中文数据百科网站。提供查牌、查套牌、百科和各种中文万智牌工具。">
+<meta name="keywords" content="万智牌 牌库 中文 百科 查牌"> 
+<title>万智牌全系列牌库 - 全站地图 - 爱基兔万智牌 - IG2</title>
+<link href="images/css.css" rel="stylesheet" type="text/css" />
+<script src="inc/jquery.js"></script>
+<script type="text/javascript">
+function createXMLHTTP() {
+	var request;
+	var browser = navigator.appName;
+	if(browser == "Microsoft Internet Explorer") {
+		var arrVersions = ["Microsoft.XMLHttp", "MSXML2.XMLHttp.4.0", "MSXML2.XMLHttp.3.0", "MSXML2.XMLHttp","MSXML2.XMLHttp.5.0"];
+		for (var i=0; i < arrVersions.length; i++)  {
+			try {
+				request = new ActiveXObject(arrVersions[i]); 
+				return request;
+			}catch(exception){}
+		}
+	}else{
+		request = new XMLHttpRequest(); 
+		return request;
+	}
+}
+</script>
+</head>
+<body>
+<div class="tit" id="top">
+    <div class="main">
+        <a href="index.html"><img src="images/logo.png" class="fl" /></a>
+        <ul class="maintop">
+        <a href="index.html">首页</a>
+        <a href="sitemap.html">牌库</a>
+        <a href="decks.php">构筑</a>
+        <a href="formats.php">比赛</a>
+        <a href="dictionary.php">百科</a>
+        <a href="public.html">公益</a>
+        <span>
+        <form action="sch.php" method="get">
+        <input name="n" type="text" value="" class="ipt" placeholder="输入牌名" /><input name="" type="submit" value="搜索" class="bt" />
+        <input name="" type="button" value="高级搜索" class="bt" onclick="location.href='schfull.php'" />
+        </form>
+        </span>
+        <div class="fr" id="userbar"></div>
+        </ul>
+    </div>
+</div>
+<script>
+$(function(){
+    $.post('ra_ajax.php',{
+		action:'getLoginStatus'
+	},function(res){
+		$("#userbar").html(res);
+	});
+});
+</script>
+<div class="bodyfixed">
+    <div class="goTop" onclick="$('body').animate({scrollTop:0}, 400);">回顶</div>
+    <div class="goTop" onclick="location.href='suberror.php'">反馈</div>
+</div>
+<div class="main"><div class="mainlist">
+    <h1>版本 sets
+        <div class="setlegend">
+            <div class="legend" style="background:#f0fbeb;">&nbsp;</div><font class="fl">标准（T2）</font>
+            <div class="legend"  style="background:#fdf2ef;">&nbsp;</div><font class="fl">摩登（Mod）</font>
+        </div>
+    </h1>
+    <ul>
+    <h2>扩展（Expansions）</h2>    
+        <li>依夏兰</li>
+		        <li class="sublist" style="
+        background:#f0fbeb        "><a href="sets_xln.html">依夏兰</a> - Ixalan  - <strong>xln</strong></li>
+        <li>阿芒凯</li>
+		        <li class="sublist" style="
+        background:#f0fbeb        "><a href="sets_hou.html">幻灭时刻</a> - Hour of Devastation  - <strong>hou</strong></li>
+                <li class="sublist" style="
+        background:#f0fbeb        "><a href="sets_akh.html">阿芒凯</a> - Amonkhet  - <strong>akh</strong></li>
+        <li>卡拉德许</li>
+		        <li class="sublist" style="
+        background:#f0fbeb        "><a href="sets_aer.html">乙太之乱</a> - Aether Revolt  - <strong>aer</strong></li>
+                <li class="sublist" style="
+        background:#f0fbeb        "><a href="sets_kld.html">卡拉德许</a> - Kaladesh  - <strong>kld</strong></li>
+        <li>依尼翠暗影</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_emn.html">异月传奇</a> - Eldritch Moon  - <strong>emn</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_soi.html">依尼翠暗影</a> - Shadows over Innistrad  - <strong>soi</strong></li>
+        <li>再战赞迪卡</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_ogw.html">守护者誓约</a> - Oath of the Gatewatch  - <strong>ogw</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_bfz.html">再战赞迪卡</a> - Battle for Zendikar  - <strong>bfz</strong></li>
+        <li>鞑契可汗</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_dtk.html">鞑契龙王</a> - Dragons of Tarkir  - <strong>dtk</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_frf.html">龙命殊途</a> - Fate Reforged  - <strong>frf</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_ktk.html">鞑契可汗</a> - Khans of Tarkir  - <strong>ktk</strong></li>
+        <li>塞洛斯</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_jou.html">尼斯之旅</a> - Journey into Nyx  - <strong>jou</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_bng.html">天神创生</a> - Born of the Gods  - <strong>bng</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_ths.html">塞洛斯</a> - Theros  - <strong>ths</strong></li>
+        <li>重返拉尼卡</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_dgm.html">巨龙迷城</a> - Dragon&rsquo;s Maze  - <strong>dgm</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_gtc.html">兵临古城</a> - Gatecrash  - <strong>gtc</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_rtr.html">重返拉尼卡</a> - Return to Ravnica  - <strong>rtr</strong></li>
+        <li>伊尼翠</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_avr.html">艾维欣重临</a> - Avacyn Restored  - <strong>avr</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_dka.html">黑暗笼罩</a> - Dark Ascension  - <strong>dka</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_isd.html">伊尼翠</a> - Innistrad  - <strong>isd</strong></li>
+        <li>秘罗地创痕</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_nph.html">新非瑞克西亚</a> - New Phyrexia  - <strong>nph</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_mbs.html">围攻秘罗地</a> - Mirrodin Besieged  - <strong>mbs</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_som.html">秘罗地创痕</a> - Scars of Mirrodin  - <strong>som</strong></li>
+        <li>赞迪卡</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_roe.html">奥札奇再起</a> - Rise of the Eldrazi  - <strong>roe</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_wwk.html">天地醒转</a> - Worldwake  - <strong>wwk</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_zen.html">赞迪卡</a> - Zendikar  - <strong>zen</strong></li>
+        <li>阿拉若断片</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_arb.html">阿拉若重生</a> - Alara Reborn  - <strong>arb</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_cfx.html">聚流</a> - Conflux  - <strong>cfx</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_ala.html">阿拉若断片</a> - Shards of Alara  - <strong>ala</strong></li>
+        <li>暗影荒原</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_eve.html">暮光</a> - Eventide  - <strong>eve</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_shm.html">暗影荒原</a> - Shadowmoor  - <strong>shm</strong></li>
+        <li>洛温</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_mt.html">晨光</a> - Morningtide  - <strong>mt</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_lw.html">洛温</a> - Lorwyn  - <strong>lw</strong></li>
+        <li>时间漩涡</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_fut.html">预知将来</a> - Future Sight  - <strong>fut</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_pc.html">时空混沌</a> - Planar Chaos  - <strong>pc</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_tsts.html">时间漩涡之时空转移</a> - Time Spiral &quot;Timeshifted&quot;  - <strong>tsts</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_ts.html">时间漩涡</a> - Time Spiral  - <strong>ts</strong></li>
+        <li>拉尼卡公会城</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_di.html">纷争</a> - Dissension  - <strong>di</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_gp.html">十会盟</a> - Guildpact  - <strong>gp</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_rav.html">拉尼卡公会城</a> - Ravnica: City of Guilds  - <strong>rav</strong></li>
+        <li>神河群英录</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_sok.html">神河任侠传</a> - Saviors of Kamigawa  - <strong>sok</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_bok.html">神河叛将谱</a> - Betrayers of Kamigawa  - <strong>bok</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_chk.html">神河群英录</a> - Champions of Kamigawa  - <strong>chk</strong></li>
+        <li>密罗地</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_5dn.html">五色曙光</a> - Fifth Dawn  - <strong>5dn</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_ds.html">玄铁</a> - Darksteel  - <strong>ds</strong></li>
+                <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_mi.html">密罗地</a> - Mirrodin  - <strong>mi</strong></li>
+        <li>石破天惊</li>
+		        <li class="sublist" style="
+                "><a href="sets_sc.html">劫运降临</a> - Scourge  - <strong>sc</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_le.html">万马千军</a> - Legions  - <strong>le</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_on.html">石破天惊</a> - Onslaught  - <strong>on</strong></li>
+        <li>奥德赛</li>
+		        <li class="sublist" style="
+                "><a href="sets_ju.html">神遣</a> - Judgment  - <strong>ju</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_tr.html">绝境</a> - Torment  - <strong>tr</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_od.html">奥德赛</a> - Odyssey  - <strong>od</strong></li>
+        <li>大战役</li>
+		        <li class="sublist" style="
+                "><a href="sets_ap.html">启示录</a> - Apocalypse  - <strong>ap</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_ps.html">时空转移</a> - Planeshift  - <strong>ps</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_in.html">大战役</a> - Invasion  - <strong>in</strong></li>
+        <li>玛凯迪亚</li>
+		        <li class="sublist" style="
+                "><a href="sets_pr.html">预言</a> - Prophecy  - <strong>pr</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_ne.html">宿敌</a> - Nemesis  - <strong>ne</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_mm.html">玛凯迪亚</a> - Mercadian Masques  - <strong>mm</strong></li>
+        <li>克撒传</li>
+		        <li class="sublist" style="
+                "><a href="sets_ud.html">天命之战</a> - Urza&rsquo;s Destiny  - <strong>ud</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_ul.html">远古遗产</a> - Urza&rsquo;s Legacy  - <strong>ul</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_us.html">克撒传</a> - Urza&rsquo;s Saga  - <strong>us</strong></li>
+        <li>暴风雨</li>
+		        <li class="sublist" style="
+                "><a href="sets_ex.html">出瑞斯记</a> - Exodus  - <strong>ex</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_sh.html">天罗城塞</a> - Stronghold  - <strong>sh</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_tp.html">暴风雨</a> - Tempest  - <strong>tp</strong></li>
+        <li>海市蜃楼</li>
+		        <li class="sublist" style="
+                "><a href="sets_wl.html">晴空号</a> - Weatherlight  - <strong>wl</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_vi.html">憧憬</a> - Visions  - <strong>vi</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_mr.html">海市蜃楼</a> - Mirage  - <strong>mr</strong></li>
+        <li>冰雪时代</li>
+		        <li class="sublist" style="
+        background:#fdf2ef        "><a href="sets_cs.html">骤霜</a> - Coldsnap  - <strong>cs</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_ai.html">同盟</a> - Alliances  - <strong>ai</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_ia.html">冰雪时代</a> - Ice Age  - <strong>ia</strong></li>
+        <li>阿拉伯之夜</li>
+		        <li class="sublist" style="
+                "><a href="sets_hl.html">家园</a> - Homelands  - <strong>hl</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_fe.html">堕落王朝</a> - Fallen Empires  - <strong>fe</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_dk.html">黑暗时代</a> - The Dark  - <strong>dk</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_lg.html">传承</a> - Legends  - <strong>lg</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_aq.html">古文明之战</a> - Antiquities  - <strong>aq</strong></li>
+                <li class="sublist" style="
+                "><a href="sets_an.html">阿拉伯之夜</a> - Arabian Nights  - <strong>an</strong></li>
+        </ul>
+    
+    <ul>
+    <h2>核心（Core Sets）</h2>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_ori.html">万智牌 起源</a> - Magic Origins  - <strong>ori</strong></li>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_m15.html">万智牌2015</a> - Magic 2015  - <strong>m15</strong></li>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_m14.html">万智牌2014</a> - Magic 2014  - <strong>m14</strong></li>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_m13.html">万智牌2013</a> - Magic 2013  - <strong>m13</strong></li>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_m12.html">万智牌2012</a> - Magic 2012  - <strong>m12</strong></li>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_m11.html">万智牌2011</a> - Magic 2011  - <strong>m11</strong></li>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_m10.html">万智牌2010</a> - Magic 2010  - <strong>m10</strong></li>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_10e.html">十版</a> - Tenth Edition  - <strong>10e</strong></li>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_9e.html">九版</a> - Ninth Edition  - <strong>9e</strong></li>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_8e.html">八版</a> - Eighth Edition  - <strong>8e</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_7e.html">七版</a> - Seventh Edition  - <strong>7e</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_6e.html">六版</a> - Classic Sixth Edition  - <strong>6e</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_5e.html">五版</a> - Fifth Edition  - <strong>5e</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_4e.html">四版</a> - Fourth Edition  - <strong>4e</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_rv.html">三版修订</a> - Revised  - <strong>rv</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_un.html">二版非限定</a> - Unlimited  - <strong>un</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_be.html">一版限定B</a> - Beta  - <strong>be</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_al.html">一版限定A</a> - Alpha  - <strong>al</strong></li>
+        </ul>
+    
+    <ul>
+    <h2>其他（Other Sets）</h2>
+        <li class="sublist" style="
+        "><a href="sets_ima.html">精英大师</a> - Iconic Masters  - <strong>ima</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_c17.html">指挥官2017</a> - Commander 2017  - <strong>c17</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_mprp.html">万智牌玩家奖励</a> - Magic Player Rewards  - <strong>mprp</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_cn2.html">诡局：王权争霸</a> - Conspiracy: Take the Crown  - <strong>cn2</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_mpsakh.html">阿芒凯逸品</a> - Amonkhet Invocations  - <strong>mpsakh</strong></li>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_mm3.html">摩登大师2017</a> - Modern Masters 2017  - <strong>mm3</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_c16.html">指挥官2016</a> - Commander 2016  - <strong>c16</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_mpskld.html">卡拉德许逸品</a> - Kaladesh Inventions  - <strong>mpskld</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_ema.html">永恒大师</a> - Eternal Masters  - <strong>ema</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_c15.html">指挥官2015</a> - Commander 2015  - <strong>c15</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_exp.html">赞迪卡逸品</a> - Zendikar Expeditions  - <strong>exp</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_cns.html">诡局</a> - Conspiracy  - <strong>cns</strong></li>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_mm2.html">摩登大师2015</a> - Modern Masters 2015  - <strong>mm2</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_c14.html">指挥官2014</a> - Commander 2014  - <strong>c14</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_c13.html">指挥官2013</a> - Commander 2013 Edition  - <strong>c13</strong></li>
+        <li class="sublist" style="
+    background:#fdf2ef    "><a href="sets_mma.html">摩登大师</a> - Modern Masters  - <strong>mma</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_cmd.html">指挥官</a> - Commander  - <strong>cmd</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_uh.html">精神错乱（机飞2）</a> - Unhinged  - <strong>uh</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_st.html">初学者1999</a> - Starter 1999  - <strong>st</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_p3k.html">博图三国志</a> - Portal Three Kingdoms  - <strong>p3k</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_po2.html">博图第二时代</a> - Portal Second Age  - <strong>po2</strong></li>
+        <li class="sublist" style="
+        "><a href="sets_po.html">博图</a> - Portal  - <strong>po</strong></li>
+        </ul>
+    <img src="images/mtg-top.png" />
+</div>
+<div class="downbar">
+    <span class="fl">
+        <a href="aboutus.html">关于我们</a> -
+        <a href="add_cards.php">志愿者</a>
+    </span>
+    <span class="fr">INTEREST GATHERING 2 (IG2)· 爱基兔万智牌数据网站 copyright  <a href="#">京ICP备12043279号-3</a> Powerd by <a href="http://rams.cc" target="_blank">RAMs</a></span>
+</div>
+</div></body></html>

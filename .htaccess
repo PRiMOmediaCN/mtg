@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule sets_([0-9a-zA-Z]{1,}).html$ clist.php?abbr=$1
+RewriteRule card_([0-9a-zA-Z]{1,}).html$ card.php?id=$1
+</IfModule>

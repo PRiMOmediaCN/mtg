@@ -1,0 +1,136 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="万智牌中文数据百科网站。提供查牌、查套牌、百科和各种中文万智牌工具。">
+<meta name="keywords" content="万智牌 牌库 中文 百科 查牌"> 
+<title>爱基兔万智牌 - IG2</title>
+<link href="images/css.css" rel="stylesheet" type="text/css" />
+<script src="inc/jquery.js"></script>
+<script type="text/javascript">
+uaredirect("m/","");
+function uaredirect(f) {
+    try {
+        if (document.getElementById("bdmark") != null) {
+            return
+        }
+        var b = false;
+        if (arguments[1]) {
+            var e = window.location.host;
+            var a = window.location.href;
+            if (isSubdomain(arguments[1], e) == 1) {
+                f = f + "/#m/" + a;
+                b = true
+            } else {
+                if (isSubdomain(arguments[1], e) == 2) {
+                    f = f + "/#m/" + a;
+                    b = true
+                } else {
+                    f = a;
+                    b = false
+                }
+            }
+        } else {
+            b = true
+        }
+        if (b) {
+            var c = window.location.hash;
+            if (!c.match("fromapp")) {
+                if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|SymbianOS)/i))) {
+                    location.replace(f)
+                }
+            }
+        }
+    } catch(d) {}
+}
+function isSubdomain(c, d) {
+    this.getdomain = function(f) {
+        var e = f.indexOf("://");
+        if (e > 0) {
+            var h = f.substr(e + 3)
+        } else {
+            var h = f
+        }
+        var g = /^www\./;
+        if (g.test(h)) {
+            h = h.substr(4)
+        }
+        return h
+    };
+    if (c == d) {
+        return 1
+    } else {
+        var c = this.getdomain(c);
+        var b = this.getdomain(d);
+        if (c == b) {
+            return 1
+        } else {
+            c = c.replace(".", "\\.");
+            var a = new RegExp("\\." + c + "$");
+            if (b.match(a)) {
+                return 2
+            } else {
+                return 0
+            }
+        }
+    }
+}
+</script>
+</head>
+<body>
+<div class="tit" id="top">
+    <div class="main">
+        <a href="index.html"><img src="images/logo.png" class="fl" /></a>
+        <ul class="maintop">
+        <a href="index.html">首页</a>
+        <a href="sitemap.html">牌库</a>
+        <a href="decks.php">构筑</a>
+        <a href="formats.php">比赛</a>
+        <a href="dictionary.php">百科</a>
+        <a href="public.html">公益</a>
+        <span>
+        <form action="sch.php" method="get">
+        <input name="n" type="text" value="" class="ipt" placeholder="输入牌名" /><input name="" type="submit" value="搜索" class="bt" />
+        <input name="" type="button" value="高级搜索" class="bt" onclick="location.href='schfull.php'" />
+        </form>
+        </span>
+        <div class="fr" id="userbar"></div>
+        </ul>
+    </div>
+</div>
+<script>
+$(function(){
+    $.post('ra_ajax.php',{
+		action:'getLoginStatus'
+	},function(res){
+		$("#userbar").html(res);
+	});
+});
+</script>
+<div class="bodyfixed">
+    <div class="goTop" onclick="$('body').animate({scrollTop:0}, 400);">回顶</div>
+    <div class="goTop" onclick="location.href='suberror.php'">反馈</div>
+</div>
+<div class="main"><div class="inbar">
+    <div class="inschbar">
+        <li>直接输入中/英文牌名 - <a href="#">搜索建议</a></li>
+        <form action="sch.php" method="get">
+        <input name="n" type="text" value="" class="ipt" />
+        <input name="sch" type="submit" value="搜索" class="bt" />
+        </form>
+        <li>高级搜索示例 
+        - <a href="sch.php?n=&h=1&c=&cs=&in=&st=1&r=4&r=3&crtcate=&fv=&p=&schfull=搜索">T2所有秘稀和金</a> 
+        - <a href="sch.php?n=&h=1&c=BBB&cs=&in=&st=2&crtcate=&fv=&p=&schfull=搜索">摩登提供3点黑献力的牌</a> 
+        - <a href="sch.php?n=&cr%5B%5D=g&c=&cs=&in=&st=0&ct%5B%5D=4&crtcate=&lg=1&fv=&p=&schfull=搜索">所有绿色的传奇生物</a> 
+        - <a href="schfull.php"><strong>高级搜索</strong></a>
+        </li>
+    </div>
+</div>
+<div class="downbar">
+    <span class="fl">
+        <a href="aboutus.html">关于我们</a> -
+        <a href="add_cards.php">志愿者</a>
+    </span>
+    <span class="fr">INTEREST GATHERING 2 (IG2)· 爱基兔万智牌数据网站 copyright  <a href="#">京ICP备12043279号-3</a> Powerd by <a href="#" target="_blank">RAMs</a></span>
+</div>
+</div>
+</body></html>

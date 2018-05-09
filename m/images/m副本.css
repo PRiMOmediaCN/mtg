@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div{ font-family:"微软雅黑"; padding:0; margin:0; border:0;}
+input,button,select,textarea{outline:none;-webkit-appearance:none;border-radius:0;}
+.dpl{ display:none;}
+.fl{ float:left;}
+.flr{ float:right;}
+.posit1{ position:absolute; z-index:1;}
+.posit2{ position:absolute; z-index:2;}
+.posit3{ position:absolute; z-index:3;}
+.posit9{ position:absolute; z-index:9;}
+.posit10{ position:absolute; z-index:10;}
+.white_font{ color:#fff;}/*白色字体*/
+.gray_font{ color:#999;}/*灰色字体*/
+.black_font{ color:#000;}/*灰色字体*/
+.green_font{ color:#669900;}/*那成绿色字体*/
+.width_100{ width:100%;}
+.tac{text-align:center}
+a{ color:#669900;}
+li{ list-style:none; float:left;}
+#main_menu{background:#000;padding:0; margin:0;overflow:hidden;position:fixed;z-index:9;}
+#main_menu_box{padding:0; margin:0;position:fixed;z-index:8;	display:none;}
+.nav_lab{ width:100%; margin-left:0; margin-right:0; text-align:center; border-bottom:1px dashed #333;}
+.nav{background:#669900; z-index:9; position:fixed; }
+#bt_1{ color:#fff;}
+
+/* index */
+#container{ position:relative;}
+#main_1{ float:left;}
+.cards_bar,.colour_bar,.legends_bar,.defense_bar,.mode_bar,.Range_bar{ position:relative;}
+.cards_lab_pl{  text-align:center; }
+.input_pl{ border:#999 solid 1px;}
+#search_bt,#Deck_search_bt{   padding:0; bottom:0; background:#669900; color:#fff; background-image:url(search_bg.png); background-size:cover; }
+.energy_bar{ background:#f4f4f4;}
+.bg_ccc{ background:#ccc;}
+.energy_img_pl{ float:left;}
+#Biological_categories{ border:1px #ccc solid;}
+#Biological_categories_ipt,.defense_slt{ border:0; background-color:transparent;}
+.defense_slt{appearance:none;-moz-appearance:none;-webkit-appearance:none;}
+.bc_div{ background:#000;}
+#search_bt2{   padding:0; bottom:0; background-image:url(search_bg2.png); background-size:cover; border: none; }
+.footer{ background:#eeeeee; float:left; margin-bottom:0; margin-left:0;}
+.search_ipt{ border:1px solid #ccc;}
+
+/*  牌库  sitemap */
+.big_Environment_name,.Deck_Environment_allwritten{ width:100%;}
+.Environment_bar{ border-bottom:#ccc solid 1px;}
+.Deck_li_pl{ border:#ccc solid 1px;}
+.Deck_face_img{ position:relative; overflow:hidden;}
+
+/* 查看牌组 */
+.word_box,.clist_box{ border-bottom:#ccc dashed 1px;}
+#img_enlarge{ background:url(mb.png); position:fixed; z-index:10; }
+.lab_opaticy_1{ background:#000; }
+.word_box_dot{ white-space:nowrap; text-overflow:ellipsis; white-space : nowrap; overflow : hidden;}
+.word_box_dot label{display:inline}
+.clist_box_dot{ white-space:nowrap; text-overflow:ellipsis; white-space : nowrap; overflow : hidden;}
+.clist_box_dot label{display:inline}
+
+#img_enlarge_img_bar{ background:#000; position:absolute; overflow:hidden;}

@@ -1,0 +1,94 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="万智牌中文数据百科网站。提供查牌、查套牌、百科和各种中文万智牌工具。">
+<meta name="keywords" content="万智牌 牌库 中文 百科 查牌"> 
+<title>志愿者计划 - 爱基兔万智牌 - IG2</title>
+<link href="images/css.css" rel="stylesheet" type="text/css" />
+<script src="inc/jquery.js"></script>
+<script type="text/javascript">
+function createXMLHTTP() {
+	var request;
+	var browser = navigator.appName;
+	if(browser == "Microsoft Internet Explorer") {
+		var arrVersions = ["Microsoft.XMLHttp", "MSXML2.XMLHttp.4.0", "MSXML2.XMLHttp.3.0", "MSXML2.XMLHttp","MSXML2.XMLHttp.5.0"];
+		for (var i=0; i < arrVersions.length; i++)  {
+			try {
+				request = new ActiveXObject(arrVersions[i]); 
+				return request;
+			}catch(exception){}
+		}
+	}else{
+		request = new XMLHttpRequest(); 
+		return request;
+	}
+}
+</script>
+</head>
+<body>
+<div class="tit" id="top">
+    <div class="main">
+        <a href="index.php"><img src="images/logo.png" class="fl" /></a>
+        <ul class="maintop">
+        <a href="index.html">首页</a>
+        <a href="sitemap.html">牌库</a>
+        <a href="decks.php">构筑</a>
+        <a href="formats.php">比赛</a>
+        <a href="dictionary.php">百科</a>
+        <a href="public.html">公益</a>
+        <span>
+        <form action="sch.php" method="get">
+        <input name="n" type="text" value="" class="ipt" placeholder="输入牌名" /><input name="" type="submit" value="搜索" class="bt" />
+        <input name="" type="button" value="高级搜索" class="bt" onclick="location.href='schfull.php'" />
+        </form>
+        </span>
+        <div class="fr" id="userbar"></div>
+        </ul>
+    </div>
+</div>
+<script>
+$(function(){
+    $.post('ra_ajax.php',{
+		action:'getLoginStatus'
+	},function(res){
+		$("#userbar").html(res);
+	});
+});
+</script>
+<div class="bodyfixed">
+    <div class="goTop" onclick="$('body').animate({scrollTop:0}, 400);">回顶</div>
+    <div class="goTop" onclick="location.href='suberror.php'">反馈</div>
+</div>
+<div class="main"><div class="addleft">
+    <a href="aboutus.html">关于我们</a>
+    <a href="faq.html">FAQ</a>
+    <a href="volunteer.html">志愿者计划</a>
+    <a href="contact.html">联系我</a>
+</div><div class="addbar">
+    <ul>
+    <h2>志愿者计划</h2>
+    <li><font color="#ccc">2017-08-29</font></li>
+    <li>这个网站最初的计划就是能方便查牌，因为很多现有的网站查牌不方便，版面也乱。</li>
+    <li>后来想做百科，能快速的查关键字异能和一些生物类别等等。</li>
+    <li>现在我们希望能把整个网站做的再丰富全面一些。——因为万智所涉及的点其实是有限个，这个工程并不是无限大的。</li>
+    <li>简单说吧，我还想在下面几个领域把网站丰富起来：</li>
+    <li> - 牌面扫描：目前站内所有牌面都是magiccards.info网站上的，中文牌面并没有高清的。我希望能攒点儿大套，把所有中文牌面都扫描一遍。</li>
+    <li> - 套牌检索系统和手机版页面：这个只能我自己慢慢写程序了。</li>
+    <li> - 地理和英雄：比如非瑞克西亚和米斯拉，人文的角色描述。收录进百科里。</li>
+    <li> - 还有一部分牌还没有翻译，未翻译的牌是有英文版本的，中文的版本会标注“未翻译”。</li>
+    <li>目前就这些。</li>
+    <li>成为志愿者，我会给你开一个会员账户，然后你可以登陆并使用网站的后台。</li>
+    <li>后期会慢慢开放一些用户注册，用以建立和编辑自己的套牌。目前这个功能还没有做好，所以暂时不会开放注册。</li>
+    <li>成为志愿者以后，我也想不到有什么福利，可以免费印牌吧，或者当我搞出了什么新的自制的周边，会免费给你寄一份。</li>
+    <li>如果你有兴趣，请<a href="contact.html">联系我</a>。</li>
+    </ul>
+</div>
+
+<div class="downbar">
+    <span class="fl">
+        <a href="aboutus.html">关于我们</a> -
+        <a href="add_cards.php">志愿者</a>
+    </span>
+    <span class="fr">INTEREST GATHERING 2 (IG2)· 爱基兔万智牌数据网站 copyright  <a href="#">京ICP备12043279号-3</a> Powerd by <a href="http://rams.cc" target="_blank">RAMs</a></span>
+</div>
+</div></body></html>

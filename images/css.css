@@ -1,0 +1,158 @@
+@charset "utf-8";
+html,body,h1,ul,li{ margin:0; padding:0;font:14px Arial;list-style:none; color:#666;}img{ border:none;}
+a{ color:#690; text-decoration:underline;}a:hover{ color:#000;}
+
+li{ float:left; width:100%; border-bottom:1px dashed #ccc;padding:10px 0;}
+.fl{ float:left;}.fr{ float:right;}.red{color:#900;}.gray{ color:#ccc;}
+
+.clrblk{ float:left; width:30px; height:30px; line-height:30px; padding:10px 5px; cursor:pointer;}
+.clrblk:hover{ background:#eee;}
+.clrblk img{ width:30px;}
+.disimg img{ float:right; cursor:pointer; margin:5px 8px 0 0;}
+.ablk{ float:left; width:180px; line-height:24px; margin:5px 10px;}
+
+.main{ margin:0 auto; width:1100px;}
+.tit{ float:left; width:100%; height:50px; background:#690; margin-top:0;}
+.tit .ipt{ float:left; width:120px; height:24px; line-height:24px; margin:10px 0 0 10px; border:1px solid #5b7803; padding-left:10px;}
+.tit .bt{ float:left; height:28px; line-height:24px; color:#fff;margin:10px 10px 0 0; background:#5b7803; border:1px solid #5b7803; cursor:pointer;}
+.maintop{ float:left; width:940px; height:50px; margin:0 0 0 30px;}
+.maintop a{ float:left; height:50px; line-height:50px; text-align:center;color:#fff; margin-left:1px; padding:0 20px;text-decoration:none;}
+.maintop a:hover{background:#5b7803;}
+
+/* 右侧悬浮 */
+.bodyfixed{ position:fixed; right:20px; bottom:30px; width:60px; height:120px;}
+.bodyfixed .goTop{float:left; width:60px; height:60px; line-height:60px; color:#666; background:#fff; border:1px solid #ccc; text-align:center; cursor:pointer;}
+.bodyfixed .goTop:hover{ background:#690; color:#fff;border:1px solid #fff;}
+
+.addleft{ float:left; width:150px; margin:20px 20px 0 0; min-height:300px;}
+.addleft a{ float:left; display:block; width:100%; height:36px; line-height:36px; border-bottom:1px dashed #ccc;}
+.addleft a:hover{ background:#f4f4f4;}
+
+.addbar{ float:left; width:930px; min-height:500px; margin-bottom:10px;}
+.addbar ul{float:left; padding:10px 0 0 10px;}
+.addbar ul h2{float:left; font-size:24px; font-family:"微软雅黑","黑体"; margin:15px 0;}
+.addbar ul li .crtcate{ padding:5px 10px; background:#666; color:#fff;}
+.addbar ul li:hover,.setlist ul li:hover,.cardbar .cardbody ul li:hover,.cardbar .cardright ul li:hover,.mainlist ul li:hover{ background:#f4f4f4;}
+.addbar ul li label,.cardbar .cardbody ul li label,.cardbar .cardright ul li label,.inbar ul li label{ float:left; width:90px; }
+.addbar .ipt,.addbar .ara,.inbar ul li .ipt{ border:1px solid #ccc; background:#fff; width:350px; height:20px; line-height:20px; padding-left:5px;}
+.addbar .ara{height:100px;}
+.addbar .short{ width:50px;}
+
+.midbar{ float:left; width:67%; margin-right:3%;}
+.coloright{margin:5px 0 0 3px; width:15px; float:right;}
+.rightbar{ float:right; width:30%;}
+
+.blog_list{float:left;width:930px; min-height:300px;}
+.blog_list li{ width:212px;height:320px; margin:0 8px 15px 0; padding:5px; border:1px solid #ccc;}
+.blog_list .blogface{ float:left; width:200px; height:160px; margin:6px; overflow:hidden; position:relative;}
+.blog_list .blogface img{ position:absolute; left:-37px; top:-47px;}
+.blog_list .blogtit{ float:left; width:96%; margin:2%; line-height:20px; font-size:14px;}
+.blog_list .blogsubtit{float:left; width:96%; margin:0 2%; font-size:12px; color:#ccc; line-height:18px;}
+.blog_list .blogintro{ float:left; width:96%; margin:3% 2% 0; line-height:18px; color:#999; font-size:12px; overflow:hidden;}
+.blog_subtit{ width:100%; height:40px; line-height:40px; font-size:14px; color:#ccc;}
+.blog_view{ width:100%; font-size:16px; line-height:24px; color:#666;}
+
+.blog_right{width:220px; min-height:300px;}
+
+/* 套牌搜索框 */
+#blog_schBar{ float:left; width:910px; margin-bottom:5px; border-top:1px solid #ccc; padding-top:5px;}
+#blog_schBar label{ float:left; width:60px; margin-right:10px; font-weight:bold;}
+#blog_schBar .choosenbar{ float:left; height:30px; line-height:30px; padding:0 10px; margin:0 5px;cursor:pointer;}
+#blog_schBar .uchoose{background:#fff; color:#333;}
+#blog_schBar .choosed{background:#690; color:#fff;}
+
+.blogeditor{ float:left; width:822px; min-height:300px; margin-bottom:10px;}
+.preshow{float:left; width:500px; min-height:300px; background:#fff; border:1px dashed #ccc; margin:10px 10px 0 0; padding:0 5px; line-height:24px;}
+.editorbar{ float:left; width:300px;}
+.editorbar dt{ float:left; width:100%; height:30px; line-height:30px;}
+.editorbar dt span{ cursor:pointer;}
+.editorbar dt .on{color:#690;}.editorbar dt .current{color:#333;}
+.editorbar dd{ float:left; width:100%; margin:0;}
+.editorbar dd .ara{ width:285px; height:100px;border:1px solid #ccc; font-size:14px; line-height:24px;margin-bottom:5px;}
+.editorbar dd .ipt{ width:285px; height:24px;border:1px solid #ccc; font-size:14px; line-height:24px; margin-bottom:5px;}
+.bcnamebar{ position:absolute; left:0; top:30px; width:300px; background:#fff; border:1px solid #ccc;}
+.bcnamebar li{width:47%; padding-left:3%;}
+
+.suberrorbody li label{ float:left; width:80px;}
+.uploaddeck li{ width:48%; margin-right:2%;}
+
+/*显示套牌样式*/
+.deck_list h2{margin-bottom:0;padding-bottom:10px; border-bottom:1px solid #ccc}
+.deck_list .tabbar{margin-bottom:20px; border:none; float:left; height:100%; height:24px;}
+.deck_list .tabs{ float:left; width:100px; height:24px; line-height:24px; font-size:14px; cursor:pointer;}
+.deck_list .tabs img{ float:left; width:20px; height:20px; margin:2px 5px 0 0;}
+
+/*显示套牌 列表式*/
+.deck_list_bar{ width:48%; }
+.deck_list_bar .headli{ font-size:14px; color:#000; margin-top:10px;}
+.deck_list_bar .cnum{float:left; width:20px; color:#222; font-size:14px;}
+.deck_list_bar li{ height:24px; font-size:11px; line-height:24px; padding:0; color:#ccc;}
+.deck_list_bar li img{ width:15px; height:15px; margin:5px 3px 0 0;}
+.deck_list_bar li .cardface{display:none;}
+.deck_list_bar li a{ font-size:14px;}
+.deck_list_bar li:hover{ background:#f4f4f4;}
+
+/*显示套牌 图片式*/
+.deck_list_bar_imgs{ width:100%; }
+.deck_list_bar_imgs .headli{display:none;}
+.deck_list_bar_imgs .cnum{float:left; width:100%; height:24px; line-height:24px; color:#222; font-size:14px; text-align:center;}
+.deck_list_bar_imgs .cname{ display:none;}
+.deck_list_bar_imgs li{ width:180px; height:291px;padding:0; margin:5px 4px 0 0;}
+.deck_list_bar_imgs li img{ display:none;}
+.deck_list_bar_imgs li .cardface{ display:block; float:left; width:180px; height:257px; margin:0;}
+
+/*右侧统计数据*/
+.piebar{float:left; width:100%; margin:20px 0 40px;}
+.linebar{float:left; width:100%; margin:0 0 20px;}
+.linebar li{ height:24px; padding:0; }
+.linebar li label{float:left; width:40px; height:24px; line-height:24px;}
+.linebar li span{float:left;display:block; height:12px; overflow:hidden; margin:6px 10px 0 0;}
+
+.mainlist,.setlist,.cardbar,.inbar,.downbar,.suberrorbody{ float:left; width:100%;}
+.mainlist h1,.setlist h1,.cardbar h1,.inbar h1{ display:block; float:left; width:100%; height:40px; margin:25px 0 0; padding-bottom:20px; font-size:34px; font-family:"微软雅黑","黑体"; border-bottom:1px dashed #000;}
+.mainlist ul{ float:left; width:345px; padding:10px;}
+.mainlist ul h2{ font-size:24px; font-family:"微软雅黑","黑体"; margin:15px 0;}
+.mainlist ul li{ float:left; width:345px;border-bottom:1px dashed #ccc;padding:10px 0;}
+.mainlist ul .sublist{ width:330px; padding-left:15px;}
+.setlist ul li label{ float:left; width:160px; padding:0 10px; line-height:20px;}
+
+/*牌库示例*/
+.setlegend{float:right; width:200px; height:20px; line-height:20px; font-size:12px; margin-top:16px;}
+.legend{float:left;width:20px; height:20px;  margin-right:5px;}
+
+.cardbar h1 .coast{ float:right; margin:15px 0 0 0;}
+.cardbar h1 .coast img{ margin-left:3px;}
+.cardbar .cardpic{ float:left; width:324px; padding:10px 0;}
+.cardbar dt{ float:left; padding:10px 0; margin-bottom:10px; border-bottom:1px dashed #ccc;}
+.cardbar .cardpic span,.cardbar .cardbody span{float:right; display:block;background:#999; padding:3px 10px; font-size:12px; color:#fff;text-align:center;}
+.cardbar .cardbody{ float:left; width:465px; padding:10px 0 0 10px;}
+.cardbar .cardbody ul{ float:left; width:455px;}
+.cardbar .cardbody ul li{ line-height:22px;}
+.cardbar .cardbody .intext{width:350px;}
+.cardbar .cardbody .intext a{ position:relative;}
+.cardbar .cardbody .intext a .keybar{ position:absolute; width:335px; padding:10px; background:#fff; border:5px solid #9c0;display:none; z-index:99;}
+.cardbar .cardbody .intext a .keybar li{ border-bottom:1px dashed #ccc;}
+.cardbar .cardbody .intext a .keybar li label{ width:90px;}
+.cardbar .cardright{ float:left; width:285px; padding:10px 0 0 15px;}
+
+.inbar{min-height:500px;}
+.inbar ul li span{ margin:0 10px;}
+.inbar .ulright{ float:left; width:330px; padding:10px 0 10px 10px; min-height:488px; text-align:right;}
+
+.inschbar{ float:left; width:800px; margin:100px 150px;}
+.inschbar li{ float:left; width:100%; line-height:24px; margin:10px 0;}
+.inschbar .ipt{float:left;width:640px;padding-left:15px;height:44px;line-height:44px;font-size:24px;border:1px solid #666;margin-right:0;font-family:"微软雅黑","黑体";}
+.inschbar .bt{ float:left; height:48px; line-height:48px; padding:0 15px; font-size:18px; background:#5b7803; color:#fff; border:none;font-family:"微软雅黑","黑体"; cursor:pointer;}
+.inschbar .bt:hover{background:#690;}
+
+.gotoshow{ display:none;}
+.popbar{ display:none; background:#fff; position:fixed; z-index:3; border:3px solid #690; width:600px; padding:15px; line-height:24px; top:200px;}
+.popbar img{ position:absolute; right:8px; top:8px;}
+
+.publicbar{ float:left; width:100%; text-align:center; background:#000;}
+
+#deckPageMore,#decklist{ float:left; width:100%;}
+.deckGetMore{ float:left; width:100%; height:50px; line-height:50px; text-align:center; background:#f4f4f4; cursor:pointer;}
+
+.downbar{ height:30px;padding-top:5px; border-top:1px dashed #000; margin-top:30px;}
+.downbar span{ line-height:24px;font-size:12px;}
